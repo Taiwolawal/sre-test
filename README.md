@@ -12,11 +12,13 @@ The task of the SRE-challenge is it to ensure that all images moved from legacy-
 
 * Create database named 'proddatabase' in the PostgreSQL created and create table "avatar" in prodatabase.
 
-* To interact with the AWS service (Database, S3), we make use of boto3 
+* To interact with the AWS service (Database, S3), we make use of boto3, psycopg2-binary.
 
 * In the seeder.py file enter the necessary credentials and details needed and run the file with number of avatar images required.
 
-* R
+* Configure the migrate.py file with appropriate values 
+
+* Run the migrate.py to move migrate images from legacy to production S3.
 
 # Performance and Scalability
 * The program is highly scalable irrespective of the volume of files needed to be transfered from one S3 to another.
